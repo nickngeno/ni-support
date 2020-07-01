@@ -1,0 +1,49 @@
+body {
+    background-color: silver;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    
+}
+.main{
+    background-color: whitesmoke;
+}
+.quotataion {
+    text-align: center;
+    font-size: 2em;
+    /* margin: 10px; */
+    color: skyblue;
+}
+.brandname {
+
+    font-family: papyrus;
+    color: skyblue;
+}
+.face-div {
+     width: 100%;
+     height: 50%;
+}
+img .face-img{
+    width: 100% ;
+    height: auto;
+}
+
+.footer {
+    background-color: dimgray;
+    width: 100%;
+    height: 75px;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-nav {
+    list-style-type: none;
+    padding: 5px;
+    
+}
+.footer-nav li{
+    display: inline-block;
+    margin: 5px;
+}
