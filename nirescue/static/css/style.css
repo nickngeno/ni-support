@@ -6,6 +6,11 @@ body {
     line-height: 1.6;
     
 }
+h2{
+    text-align: center;
+    font-weight: 700;
+    
+}
 .main{
     background-color: whitesmoke;
 }
@@ -30,17 +35,37 @@ body {
 .more-info-cards{
     margin-bottom: 20px;
 }
+.icon {
+    max-width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
+.contact-options{
+    padding: 20px;
 
-.footer {
-    background-color: dimgray;
+}
+.contact-options h2{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.request-btn{
+    color: #fff;
+    /* padding: 5px; */
+    /* border: 5px solid red; */
+    height: auto;
+}
+#footer {
+    background-color: aliceblue;
     width: 100%;
     height: 75px;
     /* border: 5px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
-footer .footer-nav {
+.footer-nav {
     list-style-type: none;
     padding: 5px;
     

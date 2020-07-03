@@ -54,35 +54,74 @@
     
     <section id="more-info-section">
         <div class="container more-info-cards">
-            <div class="row">
-                <div class="col sm-6">
-                    
-                    <div class="card">
-                        
-                        <div class="card-body text-center">
-                            <p class="card-title">About us</p>
-                            <p class="card-text">We care for mental health.Let's face this together and we shall for sure triumph</p>
-                        </div>
-                        
+            <div class="card-deck">
+                <div class="card d-flex flex-row">
+                    <img class="icon" src="{% static 'images/support-ind.png' %}" alt="support">
+                    <!-- <p>hello flexy is rell shit </p> -->
+                    <div class="card-body">
+                        <h5 class="card-title">About us</h5>
+                        <p class="card-text">We care for mental health.Let's face this together and we shall for sure triumph</p>
                     </div>
                 </div>
-                <div class="col sm-6">
-                    <div class="card">
-                        
-                        <div class="card-body text-left">
-                            <p class="card-title">Why you need help</p>
-                            <p class="card-text">We cannot assume mental well-being anymore.We are here to save a generation being swept away buy a monster called <strong>DEPRESSION</strong></p>
-                        </div>
-                        
+                <div class="card d-flex flex-row">
+                    <img class="icon" src="{% static 'images/community-icon.png' %}" alt="support">
+                    <div class="card-body">
+                        <h5 class="card-title">Why you need a community</h5>
+                        <p class="card-text">We cannot assume mental well-being anymore.We are here to save a generation being swept away buy a monster called <strong>DEPRESSION</strong></p>
                     </div>
-                    
-                    
                 </div>
             </div>
-        </section>
+            
+        </div>
     </div>
+</section>
+<!-- contact section -->
+<section id="contact">
+    <div class="contact-options">
+        <h2>Contact Support</h2>
+        <div class="container">
+            <div class="card-deck ">
+                <div class="card">
+                    <img src="{% static 'images/individual-icon.jpg' %}" alt="icon" class="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Support for individual</h5>
+                        <p class="card-text">Need a personal touch and conversation with one of our representantive?Submit a request and we shall reach out as soon as possible</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-primary btn-block ">Submit a request</a>
+                    </div> 
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/support-ind.png' %}" alt="icon" class="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Support for Company/Business</h5>
+                        <p class="card-text">Our forum is available via a variety of plans to get you the level of help you need.Click the request button below to know more</p>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-primary btn-block ">Submit a request</a>
+                    </div> 
+                    
+                    
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/person-icon.png' %}" alt="icon" class="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalized support</h5>
+                        <p class="card-text">We hava premium support package for those who want a more personalized professional touch. Submit the request with a click of a button below. </p>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-primary btn-block ">Submit a request</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 </main>
-<footer class="footer">
+<footer id="footer">
     <ul class="footer-nav">
         <li>About</li>
         <li>ContactUs</li>
