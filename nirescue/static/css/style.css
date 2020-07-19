@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
+    font-family: sans-serif;
     line-height: 1.6;
     
 }
 h2{
     text-align: center;
-    font-weight: 700;
+    font-weight: bold;
     
 }
 .main{
@@ -26,11 +27,21 @@ h2{
     color: skyblue;
 }
 .face-div-bg{
+    
     width: 100%;
-    height: 600px;
-    object-fit: none;
-    background-image: url("../images/peace1.jpg");
+    height: auto;
+    object-fit: contain;
+    /* background-image: url("../images/peace1.jpg"); */
+    background-image: linear-gradient(to right top, #ededed, #dcdeea, #c5d0e8, #a8c4e5, #84b9e1);
     margin-bottom: 20px;
+    /* opacity: 0.8; */
+}
+.face-div-content{
+    /* display: flex;
+    flex-direction: row;
+     */
+     align-content: center;
+
 }
 .more-info-cards{
     margin-bottom: 20px;
@@ -55,6 +66,74 @@ h2{
     /* border: 5px solid red; */
     height: auto;
 }
+.face-div-about{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to right top, #ededed, #dcdeea, #c5d0e8, #a8c4e5, #84b9e1);
+    padding-top: 50px;
+
+}
+.help-us{
+    text-align: center;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    color: darkblue;
+    border: solid 2px white ;
+    opacity: 0.7;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.stats-summary{
+    padding: 20px;
+    /* margin: 20px; */
+
+
+}
+.our-mission{
+    padding: 20px;
+    border-top: solid 10px skyblue;
+    background-color: #f1f1f0;
+
+}
+.red{
+    background-color: red;
+    color: white; 
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.yellow{
+    background-color: yellow; 
+    color:black; 
+    /* height: 200px; */
+     display: flex; 
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     align-items: center;
+} 
+.purple{
+    background-color: purple;
+    color: white;
+     /* height: 100px;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.process-cards{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 200px;
+    gap: 20px;
+}
 #footer {
     background-color: aliceblue;
     width: 100%;
@@ -63,7 +142,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .footer-nav {
     list-style-type: none;

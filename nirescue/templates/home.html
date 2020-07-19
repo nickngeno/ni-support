@@ -2,83 +2,96 @@
 {% load static %}
 {% block title %}Home{% endblock %}
 {% block content %}
-    
+
 <main role="main">
     <p class="quotataion"><cite>"A problem shared is a problem half solved"</cite></p>
     <section id="face-div">
         <div class="face-div-bg container-fluid">
-            <!-- <img src="{% static 'images/okay.jpg' %}" alt="" class="img-fluid"> -->
+            <div class="face-div-content container">
+                <div class="row">
+                    <div class="col-sm-4" style="margin-top: 30px;">
+                        <form action="" class="form">
+                            <input type="text" class="" name="name" placeholder="search location" >
+                            <button class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="{% static 'images/happinesspic.jpg' %}" alt="" class="img-responsive" width="100%;" height="auto; opacity="0.7">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="more-info-section">
+            <div class="container more-info-cards">
+                <div class="card-deck">
+                    <div class="card d-flex flex-row">
+                        <img class="icon" src="{% static 'images/support-ind.png' %}" alt="support">
+                        <!-- <p>hello flexy is rell shit </p> -->
+                        <div class="card-body">
+                            <h5 class="card-title">About us</h5>
+                            <p class="card-text">We care for mental health.Let's face this together and we shall for sure triumph</p>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-row">
+                        <img class="icon" src="{% static 'images/community-icon.png' %}" alt="support">
+                        <div class="card-body">
+                            <h5 class="card-title">Why you need a community</h5>
+                            <p class="card-text">We cannot assume mental well-being anymore.We are here to save a generation being swept away buy a monster called <strong>DEPRESSION</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact">
+        <div class="contact-options">
+            <h2 style="font-weight: 700;">Contact Support</h2>
+            <div class="container">
+                <div class="card-deck ">
+                    <div class="card">
+                        <img src="{% static 'images/individual-icon.jpg' %}" alt="icon" class="icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Support for individual</h5>
+                            <p class="card-text">Need a personal touch and conversation with one of our representantive?Submit a request and we shall reach out as soon as possible</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="btn btn-primary btn-block ">Submit a request</a>
+                        </div> 
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/support-ind.png' %}" alt="icon" class="icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Support for Company/Business</h5>
+                            <p class="card-text">Our forum is available via a variety of plans to get you the level of help you need.Click the request button below to know more</p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="btn btn-primary btn-block ">Submit a request</a>
+                        </div> 
+                        
+                        
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/person-icon.png' %}" alt="icon" class="icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Personalized support</h5>
+                            <p class="card-text">We hava premium support package for those who want a more personalized professional touch. Submit the request with a click of a button below. </p>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="btn btn-primary btn-block ">Submit a request</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
-    <section id="more-info-section">
-        <div class="container more-info-cards">
-            <div class="card-deck">
-                <div class="card d-flex flex-row">
-                    <img class="icon" src="{% static 'images/support-ind.png' %}" alt="support">
-                    <!-- <p>hello flexy is rell shit </p> -->
-                    <div class="card-body">
-                        <h5 class="card-title">About us</h5>
-                        <p class="card-text">We care for mental health.Let's face this together and we shall for sure triumph</p>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row">
-                    <img class="icon" src="{% static 'images/community-icon.png' %}" alt="support">
-                    <div class="card-body">
-                        <h5 class="card-title">Why you need a community</h5>
-                        <p class="card-text">We cannot assume mental well-being anymore.We are here to save a generation being swept away buy a monster called <strong>DEPRESSION</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<!-- contact section -->
-<section id="contact">
-    <div class="contact-options">
-        <h2>Contact Support</h2>
-        <div class="container">
-            <div class="card-deck ">
-                <div class="card">
-                    <img src="{% static 'images/individual-icon.jpg' %}" alt="icon" class="icon">
-                    <div class="card-body">
-                        <h5 class="card-title">Support for individual</h5>
-                        <p class="card-text">Need a personal touch and conversation with one of our representantive?Submit a request and we shall reach out as soon as possible</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="btn btn-primary btn-block ">Submit a request</a>
-                    </div> 
-                </div>
-                <div class="card">
-                    <img src="{% static 'images/support-ind.png' %}" alt="icon" class="icon">
-                    <div class="card-body">
-                        <h5 class="card-title">Support for Company/Business</h5>
-                        <p class="card-text">Our forum is available via a variety of plans to get you the level of help you need.Click the request button below to know more</p>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="btn btn-primary btn-block ">Submit a request</a>
-                    </div> 
-                    
-                    
-                </div>
-                <div class="card">
-                    <img src="{% static 'images/person-icon.png' %}" alt="icon" class="icon">
-                    <div class="card-body">
-                        <h5 class="card-title">Personalized support</h5>
-                        <p class="card-text">We hava premium support package for those who want a more personalized professional touch. Submit the request with a click of a button below. </p>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="btn btn-primary btn-block ">Submit a request</a>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 </main>
 
 {% endblock %}
